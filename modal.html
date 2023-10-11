@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/modal.css">
     <link rel="icon" sizes="32x32" href="./images/favicon.png" type="image/png">
   </head>
 
@@ -728,6 +729,33 @@
         </div>
       </div>
     </footer>
+
+    <!--Модальное окно-->
+    <div class="modal-container">
+      <div class="modal">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">
+            Закрыть.
+          </span>
+        </button>
+        <section class="section-modal">
+          <h2 class="visually-hidden">
+            Форма обратной связи по доставке.
+          </h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+            <p class="modal-form-info">
+              Мы обязательно ответим вам!
+            </p>
+            <input class="modal-full-name" type="text" placeholder="Имя и фамилия" name="full-name" required>
+            <input class="modal-email" type="email" placeholder="email@example.com" name="email" required>
+            <input class="modal-delivery-info" type="text" placeholder="В свободной форме" required>
+            <button class="button button-subscribe button-subscribe-modal" type="submit">
+              Отправить
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
 
   </body>
 
