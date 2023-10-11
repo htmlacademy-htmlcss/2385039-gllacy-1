@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .modal-container {
   margin: 0;
   padding: 0;
@@ -7,7 +14,11 @@
   width: 100%;
   height: 100%;
   background-color: rgba(252, 252, 252, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   z-index: 2;
 
@@ -20,6 +31,7 @@
   position: relative;
   background: #FCFCFC;
   border-radius: 8px;
+  -webkit-box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
   box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
 }
 
@@ -41,7 +53,12 @@
 .modal-form {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 442px;
 }
@@ -57,8 +74,13 @@
   font-weight: 700;
   line-height: 30px;
   max-width: 369px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: start;
 }
 
@@ -87,9 +109,28 @@
 }
 
 
-.modal-full-name::placeholder,
-.modal-email::placeholder,
-.modal-delivery-info::placeholder {
+.modal-full-name::-webkit-input-placeholder,
+.modal-email::-webkit-input-placeholder,
+.modal-delivery-info::-webkit-input-placeholder {
+  margin: 0;
+  padding: 0;
+  color: #B9B9B9;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  text-align: start;
+}
+
+
+.modal-full-name::-moz-placeholder,
+.modal-email::-moz-placeholder,
+.modal-delivery-info::-moz-placeholder {
   margin: 0;
   padding: 0;
   color: #B9B9B9;
@@ -103,21 +144,171 @@
   text-align: start;
 }
 
+
+.modal-full-name:-ms-input-placeholder,
+.modal-email:-ms-input-placeholder,
+.modal-delivery-info:-ms-input-placeholder {
+  margin: 0;
+  padding: 0;
+  color: #B9B9B9;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  text-align: start;
+}
+
+
+.modal-full-name::-ms-input-placeholder,
+.modal-email::-ms-input-placeholder,
+.modal-delivery-info::-ms-input-placeholder {
+  margin: 0;
+  padding: 0;
+  color: #B9B9B9;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  text-align: start;
+}
+
+
+.modal-full-name::placeholder,
+.modal-email::placeholder,
+.modal-delivery-info::placeholder {
+  margin: 0;
+  padding: 0;
+  color: #B9B9B9;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  text-align: start;
+}
+
 .button-subscribe-modal {
   margin: 0;
   margin-left: 282px;
+}
+
+.modal-full-name:hover::-webkit-input-placeholder,
+.modal-email:hover::-webkit-input-placeholder,
+.modal-delivery-info:hover::-webkit-input-placeholder {
+  color: #2D3440;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.modal-full-name:hover::-moz-placeholder,
+.modal-email:hover::-moz-placeholder,
+.modal-delivery-info:hover::-moz-placeholder {
+  color: #2D3440;
+  transition-duration: 0.3s;
+}
+
+.modal-full-name:hover:-ms-input-placeholder,
+.modal-email:hover:-ms-input-placeholder,
+.modal-delivery-info:hover:-ms-input-placeholder {
+  color: #2D3440;
+  transition-duration: 0.3s;
+}
+
+.modal-full-name:hover::-ms-input-placeholder,
+.modal-email:hover::-ms-input-placeholder,
+.modal-delivery-info:hover::-ms-input-placeholder {
+  color: #2D3440;
+  transition-duration: 0.3s;
 }
 
 .modal-full-name:hover::placeholder,
 .modal-email:hover::placeholder,
 .modal-delivery-info:hover::placeholder {
   color: #2D3440;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
+}
+
+.modal-full-name:active::-webkit-input-placeholder,
+.modal-email:active::-webkit-input-placeholder,
+.modal-delivery-info:active::-webkit-input-placeholder {
+  color: #2D3440;
+}
+
+.modal-full-name:active::-moz-placeholder,
+.modal-email:active::-moz-placeholder,
+.modal-delivery-info:active::-moz-placeholder {
+  color: #2D3440;
+}
+
+.modal-full-name:active:-ms-input-placeholder,
+.modal-email:active:-ms-input-placeholder,
+.modal-delivery-info:active:-ms-input-placeholder {
+  color: #2D3440;
+}
+
+.modal-full-name:active::-ms-input-placeholder,
+.modal-email:active::-ms-input-placeholder,
+.modal-delivery-info:active::-ms-input-placeholder {
+  color: #2D3440;
 }
 
 .modal-full-name:active::placeholder,
 .modal-email:active::placeholder,
 .modal-delivery-info:active::placeholder {
+  color: #2D3440;
+}
+
+.modal-full-name:focus::-webkit-input-placeholder,
+.modal-email:focus::-webkit-input-placeholder,
+.modal-delivery-info:focus::-webkit-input-placeholder,
+.modal-full-name:focus-visible::-webkit-input-placeholder,
+.modal-email:focus-visible::-webkit-input-placeholder,
+.modal-delivery-info:focus-visible::-webkit-input-placeholder {
+  color: #2D3440;
+}
+
+.modal-full-name:focus::-moz-placeholder,
+.modal-email:focus::-moz-placeholder,
+.modal-delivery-info:focus::-moz-placeholder,
+.modal-full-name:focus-visible::-moz-placeholder,
+.modal-email:focus-visible::-moz-placeholder,
+.modal-delivery-info:focus-visible::-moz-placeholder {
+  color: #2D3440;
+}
+
+.modal-full-name:focus:-ms-input-placeholder,
+.modal-email:focus:-ms-input-placeholder,
+.modal-delivery-info:focus:-ms-input-placeholder,
+.modal-full-name:focus-visible:-ms-input-placeholder,
+.modal-email:focus-visible:-ms-input-placeholder,
+.modal-delivery-info:focus-visible:-ms-input-placeholder {
+  color: #2D3440;
+}
+
+.modal-full-name:focus::-ms-input-placeholder,
+.modal-email:focus::-ms-input-placeholder,
+.modal-delivery-info:focus::-ms-input-placeholder,
+.modal-full-name:focus-visible::-ms-input-placeholder,
+.modal-email:focus-visible::-ms-input-placeholder,
+.modal-delivery-info:focus-visible::-ms-input-placeholder {
   color: #2D3440;
 }
 
@@ -134,6 +325,8 @@
 .modal-email:hover,
 .modal-delivery-info:hover {
   outline: 1px solid #2D3440;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
 
