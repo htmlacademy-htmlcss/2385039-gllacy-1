@@ -21,7 +21,6 @@
   -ms-flex-align: center;
   align-items: center;
   z-index: 2;
-
 }
 
 .modal {
@@ -29,7 +28,7 @@
   padding: 62px 64px;
   width: 570px;
   position: relative;
-  background: #fcfcfc;
+  background-color: #fcfcfc;
   border-radius: 8px;
   -webkit-box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
   box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
@@ -38,7 +37,7 @@
 .modal-close-button {
   content: "";
   position: absolute;
-  background-image: url(../images/modal/cross-icon.svg);
+  background-image: url("../images/modal/cross-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #fcfcfc;
@@ -108,7 +107,6 @@
   padding-bottom: 115px;
 }
 
-
 .modal-full-name::-webkit-input-placeholder,
 .modal-email::-webkit-input-placeholder,
 .modal-delivery-info::-webkit-input-placeholder {
@@ -127,7 +125,6 @@
   text-align: start;
 }
 
-
 .modal-full-name::-moz-placeholder,
 .modal-email::-moz-placeholder,
 .modal-delivery-info::-moz-placeholder {
@@ -143,7 +140,6 @@
   align-items: flex-start;
   text-align: start;
 }
-
 
 .modal-full-name:-ms-input-placeholder,
 .modal-email:-ms-input-placeholder,
@@ -163,7 +159,6 @@
   text-align: start;
 }
 
-
 .modal-full-name::-ms-input-placeholder,
 .modal-email::-ms-input-placeholder,
 .modal-delivery-info::-ms-input-placeholder {
@@ -181,7 +176,6 @@
   align-items: flex-start;
   text-align: start;
 }
-
 
 .modal-full-name::placeholder,
 .modal-email::placeholder,
@@ -337,4 +331,5 @@
 .modal-email:focus-visible,
 .modal-delivery-info:focus-visible {
   outline: 2px solid #2d3440;
+  border-color: transparent;
 }

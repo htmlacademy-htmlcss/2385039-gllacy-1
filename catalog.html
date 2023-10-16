@@ -29,8 +29,8 @@
             <ul class="header-navigation-left-list">
               <li class="header-navigation-left-item">
                 <a class="header-navigation-left-link header-catalog-link" href="#">Каталог
-                  <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
-                    fill="currentColor">
+                  <svg aria-hidden="true" focusable="false" class="arrow-icon" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="17" viewBox="0 0 16 17" fill="currentColor">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M3.80812 7.05317C3.54777 6.79282 3.12566 6.79282 2.86531 7.05317C2.60496 7.31352 2.60496 7.73563 2.86531 7.99598L7.52565 12.6563C7.52771 12.6584 7.52979 12.6606 7.53189 12.6626C7.66259 12.7933 7.83404 12.8584 8.00534 12.8579C8.1753 12.8574 8.34511 12.7923 8.47478 12.6626C8.47687 12.6606 8.47894 12.6585 8.48099 12.6564L13.1414 7.99598C13.4017 7.73563 13.4017 7.31352 13.1414 7.05317C12.881 6.79282 12.4589 6.79282 12.1986 7.05317L8.00334 11.2484L3.80812 7.05317Z" />
                   </svg>
@@ -75,7 +75,8 @@
             <!--Поиск по сайту-->
             <div class="header-search-wrapper">
               <a class="header-navigation-search" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="currentColor" viewBox="0 0 16 17">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                  fill="currentColor" viewBox="0 0 16 17">
                   <path fill-rule="evenodd"
                     d="M2.663 8.188a4.667 4.667 0 1 1 8.028 3.237.67.67 0 0 0-.123.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z"
                     clip-rule="evenodd" />
@@ -95,7 +96,8 @@
             <div class="header-entrance-wrapper">
               <a class="header-navigation-right-entrance" href="#">
                 <span class="visually-hidden">Ссылка для входа в личный кабинет.</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="currentColor">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                  viewBox="0 0 16 17" fill="currentColor">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M9 2.52461C9 2.15642 9.29848 1.85794 9.66667 1.85794H12.3333C12.8638 1.85794 13.3725 2.06865 13.7475 2.44373C14.1226 2.8188 14.3333 3.32751 14.3333 3.85794V13.1913C14.3333 13.7217 14.1226 14.2304 13.7475 14.6055C13.3725 14.9806 12.8638 15.1913 12.3333 15.1913H9.66667C9.29848 15.1913 9 14.8928 9 14.5246C9 14.1564 9.29848 13.8579 9.66667 13.8579H12.3333C12.5101 13.8579 12.6797 13.7877 12.8047 13.6627C12.9298 13.5377 13 13.3681 13 13.1913V3.85794C13 3.68113 12.9298 3.51156 12.8047 3.38654C12.6797 3.26151 12.5101 3.19127 12.3333 3.19127H9.66667C9.29848 3.19127 9 2.8928 9 2.52461ZM5.86189 4.71987C6.12224 4.45952 6.54435 4.45952 6.8047 4.71987L10.1338 8.04897C10.1509 8.06579 10.1671 8.08353 10.1824 8.1021C10.2142 8.1409 10.2411 8.18246 10.2628 8.22589C10.3079 8.31575 10.3333 8.41721 10.3333 8.52461C10.3333 8.63323 10.3074 8.73579 10.2613 8.8264C10.241 8.86635 10.2164 8.90469 10.1876 8.94072C10.1708 8.96172 10.1527 8.98169 10.1335 9.0005L6.8047 12.3293C6.54435 12.5897 6.12224 12.5897 5.86189 12.3293C5.60154 12.069 5.60154 11.6469 5.86189 11.3865L8.05715 9.19127H1.66667C1.29848 9.19127 1 8.8928 1 8.52461C1 8.15642 1.29848 7.85794 1.66667 7.85794H8.05715L5.86189 5.66268C5.60154 5.40233 5.60154 4.98022 5.86189 4.71987Z" />
                 </svg>
@@ -104,9 +106,11 @@
               <form class="header-entrance-tooltip" action="https://echo.htmlacademy.ru/" method="get">
                 <h4 class="header-entrance-tooltip-title">Личный кабинет</h4>
                 <label class="email-form-tooltip">
+                  <span class="visually-hidden">Email.</span>
                   <input class="email-input-tooltip" name="email" type="email" placeholder="email@example.com" required>
                 </label>
                 <label class="password-form">
+                  <span class="visually-hidden">Пароль.</span>
                   <input class="password-input" name="password" type="password" value="" required>
                 </label>
                 <div class="button-entrance-wrapper">
@@ -127,7 +131,8 @@
             <div class="cart-wrapper">
               <a class="header-navigation-right-cart" href="#">
                 <span class="visually-hidden">Ссылка для входа в корзину.</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="currentColor" viewBox="0 0 16 17">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                  fill="currentColor" viewBox="0 0 16 17">
                   <path fill-rule="evenodd"
                     d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                     clip-rule="evenodd" />
@@ -168,7 +173,8 @@
             <div class="cart-wrapper-empty">
               <a class="cart-empty" href="#">
                 <span class="visually-hidden">Ссылка для входа в корзину.</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="currentColor" viewBox="0 0 16 17">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                  fill="currentColor" viewBox="0 0 16 17">
                   <path fill-rule="evenodd"
                     d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                     clip-rule="evenodd" />
@@ -215,7 +221,7 @@
               <div class="section-sorting-wrapper">
                 <h3 class="section-sorting-title">Сортировка:</h3>
                 <div class="select-control-wrapper">
-                  <select class="select-control">
+                  <select class="select-control" name="sorting">
                     <option value="popular">по популярности</option>
                     <option value="price">по цене</option>
                     <option value="new">по новинкам</option>
@@ -228,10 +234,10 @@
                   <div class="range-scale">
                     <div class="range-bar" style="left: 32px; width: 72px">
                       <button class="range-toggle toggle-min">
-                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                        <span class="visually-hidden">Цена от.</span>
                       </button>
                       <button class="range-toggle toggle-max">
-                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                        <span class="visually-hidden">Цена до.</span>
                       </button>
                     </div>
                   </div>
