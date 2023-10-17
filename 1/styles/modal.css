@@ -1,0 +1,352 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.modal-container {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(252, 252, 252, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.modal {
+  margin: 0 auto;
+  padding: 62px 64px;
+  width: 570px;
+  position: relative;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
+  box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
+}
+
+.modal-close-button {
+  content: "";
+  position: absolute;
+  background-image: url("../images/modal/cross-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fcfcfc;
+  border: none;
+  width: 20px;
+  height: 20px;
+  top: 32px;
+  right: 32px;
+  cursor: pointer;
+}
+
+.modal-form {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 442px;
+}
+
+.modal-form-info {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  color: #2d3440;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  max-width: 369px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+}
+
+.modal-full-name,
+.modal-email,
+.modal-delivery-info {
+  margin: 0;
+  margin-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  border-radius: 4px;
+  border: 1px solid #b9b9b9;
+  background-color: #ffffff;
+  color: #2d3440;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.modal-delivery-info {
+  margin-bottom: 32px;
+  padding-bottom: 115px;
+}
+
+.modal-full-name::-webkit-input-placeholder,
+.modal-email::-webkit-input-placeholder,
+.modal-delivery-info::-webkit-input-placeholder {
+  margin: 0;
+  padding: 0;
+  color: #b9b9b9;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  text-align: start;
+}
+
+.modal-full-name::-moz-placeholder,
+.modal-email::-moz-placeholder,
+.modal-delivery-info::-moz-placeholder {
+  margin: 0;
+  padding: 0;
+  color: #b9b9b9;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+  align-items: flex-start;
+  text-align: start;
+}
+
+.modal-full-name:-ms-input-placeholder,
+.modal-email:-ms-input-placeholder,
+.modal-delivery-info:-ms-input-placeholder {
+  margin: 0;
+  padding: 0;
+  color: #b9b9b9;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  text-align: start;
+}
+
+.modal-full-name::-ms-input-placeholder,
+.modal-email::-ms-input-placeholder,
+.modal-delivery-info::-ms-input-placeholder {
+  margin: 0;
+  padding: 0;
+  color: #b9b9b9;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  text-align: start;
+}
+
+.modal-full-name::placeholder,
+.modal-email::placeholder,
+.modal-delivery-info::placeholder {
+  margin: 0;
+  padding: 0;
+  color: #b9b9b9;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  text-align: start;
+}
+
+.button-subscribe-modal {
+  margin: 0;
+  margin-left: 282px;
+}
+
+.modal-full-name:hover::-webkit-input-placeholder,
+.modal-email:hover::-webkit-input-placeholder,
+.modal-delivery-info:hover::-webkit-input-placeholder {
+  color: #2d3440;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.modal-full-name:hover::-moz-placeholder,
+.modal-email:hover::-moz-placeholder,
+.modal-delivery-info:hover::-moz-placeholder {
+  color: #2d3440;
+  transition-duration: 0.3s;
+}
+
+.modal-full-name:hover:-ms-input-placeholder,
+.modal-email:hover:-ms-input-placeholder,
+.modal-delivery-info:hover:-ms-input-placeholder {
+  color: #2d3440;
+  transition-duration: 0.3s;
+}
+
+.modal-full-name:hover::-ms-input-placeholder,
+.modal-email:hover::-ms-input-placeholder,
+.modal-delivery-info:hover::-ms-input-placeholder {
+  color: #2d3440;
+  transition-duration: 0.3s;
+}
+
+.modal-full-name:hover::placeholder,
+.modal-email:hover::placeholder,
+.modal-delivery-info:hover::placeholder {
+  color: #2d3440;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.modal-full-name:active::-webkit-input-placeholder,
+.modal-email:active::-webkit-input-placeholder,
+.modal-delivery-info:active::-webkit-input-placeholder {
+  color: #2d3440;
+}
+
+.modal-full-name:active::-moz-placeholder,
+.modal-email:active::-moz-placeholder,
+.modal-delivery-info:active::-moz-placeholder {
+  color: #2d3440;
+}
+
+.modal-full-name:active:-ms-input-placeholder,
+.modal-email:active:-ms-input-placeholder,
+.modal-delivery-info:active:-ms-input-placeholder {
+  color: #2d3440;
+}
+
+.modal-full-name:active::-ms-input-placeholder,
+.modal-email:active::-ms-input-placeholder,
+.modal-delivery-info:active::-ms-input-placeholder {
+  color: #2d3440;
+}
+
+.modal-full-name:active::placeholder,
+.modal-email:active::placeholder,
+.modal-delivery-info:active::placeholder {
+  color: #2d3440;
+}
+
+.modal-full-name:focus::-webkit-input-placeholder,
+.modal-email:focus::-webkit-input-placeholder,
+.modal-delivery-info:focus::-webkit-input-placeholder,
+.modal-full-name:focus-visible::-webkit-input-placeholder,
+.modal-email:focus-visible::-webkit-input-placeholder,
+.modal-delivery-info:focus-visible::-webkit-input-placeholder {
+  color: #2d3440;
+}
+
+.modal-full-name:focus::-moz-placeholder,
+.modal-email:focus::-moz-placeholder,
+.modal-delivery-info:focus::-moz-placeholder,
+.modal-full-name:focus-visible::-moz-placeholder,
+.modal-email:focus-visible::-moz-placeholder,
+.modal-delivery-info:focus-visible::-moz-placeholder {
+  color: #2d3440;
+}
+
+.modal-full-name:focus:-ms-input-placeholder,
+.modal-email:focus:-ms-input-placeholder,
+.modal-delivery-info:focus:-ms-input-placeholder,
+.modal-full-name:focus-visible:-ms-input-placeholder,
+.modal-email:focus-visible:-ms-input-placeholder,
+.modal-delivery-info:focus-visible:-ms-input-placeholder {
+  color: #2d3440;
+}
+
+.modal-full-name:focus::-ms-input-placeholder,
+.modal-email:focus::-ms-input-placeholder,
+.modal-delivery-info:focus::-ms-input-placeholder,
+.modal-full-name:focus-visible::-ms-input-placeholder,
+.modal-email:focus-visible::-ms-input-placeholder,
+.modal-delivery-info:focus-visible::-ms-input-placeholder {
+  color: #2d3440;
+}
+
+.modal-full-name:focus::placeholder,
+.modal-email:focus::placeholder,
+.modal-delivery-info:focus::placeholder,
+.modal-full-name:focus-visible::placeholder,
+.modal-email:focus-visible::placeholder,
+.modal-delivery-info:focus-visible::placeholder {
+  color: #2d3440;
+}
+
+.modal-full-name:hover,
+.modal-email:hover,
+.modal-delivery-info:hover {
+  outline: 1px solid #2d3440;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.modal-full-name:focus,
+.modal-email:focus,
+.modal-delivery-info:focus,
+.modal-full-name:focus-visible,
+.modal-email:focus-visible,
+.modal-delivery-info:focus-visible {
+  outline: 2px solid #2d3440;
+  border-color: transparent;
+}
+
+.modal-close-button:hover {
+  opacity: 0.7;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+.modal-close-button:focus,
+.modal-close-button:focus-visible {
+  outline: 2px solid #2d3440;
+  border-color: transparent;
+}
