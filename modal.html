@@ -85,7 +85,8 @@
                 <span class="visually-hidden"> Поиск по сайту. </span>
               </a>
               <form class="header-search-tooltip" action="https://echo.htmlacademy.ru/" method="get">
-                <input class="search-input-tooltip" type="text" name="search" placeholder="Поиск по сайту" required>
+                <input class="search-input-tooltip" aria-label="Поиск по сайту" type="text" name="search"
+                  placeholder="Поиск по сайту" required>
                 <button class="header-search-button" type="reset">
                   <span class="visually-hidden">
                     Сбросить запрос.
@@ -131,14 +132,13 @@
             </div>
             <div class="cart-wrapper">
               <a class="header-navigation-right-cart" href="#">
-                <span class="visually-hidden">Ссылка для входа в корзину.</span>
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
                   fill="currentColor" viewBox="0 0 16 17">
                   <path fill-rule="evenodd"
                     d="M1.167 2.108a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167Zm4.524 8.294-.813-4.064h8.23l-.775 4.067a.493.493 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                     clip-rule="evenodd" />
                 </svg>
-                2 товара
+                <span class="cart-content">2&nbsp;товара</span>
               </a>
               <!--Хедер. Попап корзины-->
               <div class="cart-tooltip-wrapper">
@@ -712,7 +712,7 @@
           </ul>
         </div>
         <div class="footer-link-wrapper">
-          <a class="footer-logo-htmlacademy" href="https://htmlacademy.ru/">
+          <a class="footer-logo-htmlacademy" href="https://htmlacademy.ru/" aria-label="Ссылка на сайт htmlacademy ">
             <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="93" height="27"
               fill="none" viewBox="0 0 93 27">
               <g fill="#2D3440" clip-path="url(#a)">
@@ -748,9 +748,12 @@
             <p class="modal-form-info">
               Мы обязательно ответим вам!
             </p>
-            <input class="modal-full-name" type="text" placeholder="Имя и фамилия" name="full-name" required>
-            <input class="modal-email" type="email" placeholder="email@example.com" name="email" required>
-            <input class="modal-delivery-info" type="text" placeholder="В свободной форме" name="info" required>
+            <input class="modal-full-name" aria-label="Имя и фамилия" type="text" placeholder="Имя и фамилия"
+              name="full-name" required>
+            <input class="modal-email" aria-label="Адрес электронной почты" type="email" placeholder="email@example.com"
+              name="email" required>
+            <input class="modal-delivery-info" aria-label="Информация о доставке в свободной форме" type="text"
+              placeholder="В свободной форме" name="info" required>
             <button class="button button-subscribe button-subscribe-modal" type="submit">
               Отправить
             </button>

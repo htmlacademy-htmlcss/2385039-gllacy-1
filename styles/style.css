@@ -232,13 +232,15 @@ body {
   position: absolute;
   margin: 0;
   padding: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
   margin-left: 0;
   margin-top: 10px;
-  width: 135px;
+  width: 138px;
   list-style-type: none;
   border-radius: 4px;
   background-color: #fcfcfc;
-  -webkit-box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
+  box-sizing: border-box;
   box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
   z-index: 1;
   display: none;
@@ -308,6 +310,12 @@ body {
   background-color: #ff7799;
 }
 
+.subcatalog-list:focus,
+.subcatalog-list:focus-visible {
+  border-color: transparent;
+  outline: 2px solid #2D3440;
+}
+
 .subcatalog-list:current {
   color: #fcfcfc;
   background-color: #ff4a78;
@@ -320,38 +328,29 @@ body {
   text-decoration: none;
 }
 
-.subcatalog-link:focus,
-.subcatalog-link:focus-visible {
-  outline: 2px solid #2d3440;
-  border-color: transparent;
-}
-
-.subcatalog-link:first-child {
-  margin-top: 4px;
-}
-
 .subcatalog-link-new {
   margin: 0;
   padding: 0;
-  margin-top: 8px;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
 }
 
-.subcatalog-link-new::after {
+.subcatalog-list:first-child {
+  margin-bottom: 8px;
+}
+
+.subcatalog-list:first-child::after {
   content: "";
+  position: absolute;
   width: 103px;
   height: 1px;
-  background-color: #b9b9b9;
-  position: absolute;
-  top: 28px;
+  border-bottom: 1px solid;
+  color: #b9b9b9;
+  bottom: 0;
+  left: 16px;
 }
 
 /* Навигация правой части главной страницы */
@@ -359,7 +358,7 @@ body {
   margin: 0;
   padding: 0;
   margin-left: auto;
-  max-width: 456px;
+  min-width: 456px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,32 +415,6 @@ body {
 .header-search-wrapper {
   margin: 0;
   padding: 0;
-  position: relative;
-}
-
-.header-navigation-right-entrance,
-.header-navigation-right-cart,
-.cart-empty {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  color: #2d3440;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: start;
   position: relative;
 }
 
@@ -703,7 +676,13 @@ body {
   margin: 0;
   padding: 6px 16px;
   width: 88px;
+  text-decoration: none;
   color: #2d3440;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 30px;
   -webkit-box-sizing: border-box;
@@ -718,6 +697,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
 
 .header-entrance-wrapper:focus-within .header-entrance-tooltip {
   display: block;
@@ -992,9 +972,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  /*display: none;*/
-  /* Разкомменторовать данное свойство,
-  чтобы увидеть верстку пустой корзины */
+  display: block;
 }
 
 .header-navigation-right-cart {
@@ -1002,24 +980,30 @@ body {
   margin-left: 16px;
   padding: 6px 16px;
   width: 115px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   cursor: pointer;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: inherit;
+  text-decoration: none;
+  color: #2d3440;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
 }
 
 .cart-wrapper-empty {
@@ -1027,8 +1011,6 @@ body {
   padding: 0;
   position: relative;
   display: none;
-  /* Закоментировать display: none,
-  что увидеть верстку пустой корзины */
 }
 
 .cart-empty {
@@ -1037,6 +1019,13 @@ body {
   padding: 6px 16px;
   width: 140px;
   cursor: pointer;
+  text-decoration: none;
+  color: #2d3440;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 30px;
   -webkit-box-sizing: border-box;
@@ -1206,6 +1195,27 @@ body {
   right: 0;
   top: 16px;
   cursor: pointer;
+}
+
+.tooltip-cart-list:hover::after,
+.tooltip-cart-link:hover {
+  opacity: 0.6;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.tooltip-cart-list:active::after,
+.tooltip-cart-link:active {
+  opacity: 0.3;
+}
+
+.tooltip-cart-list:focus::after,
+.tooltip-cart-list:focus-visible::after,
+.tooltip-cart-link:focus,
+.tooltip-cart-link:focus-visible {
+  outline: 2px solid #2d3440;
+  border-color: transparent;
 }
 
 .tooltip-cart-list:last-child {
@@ -1573,7 +1583,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   z-index: -1;
-  top: 125px;
+  top: 121px;
   background-position: center;
 }
 
@@ -1661,7 +1671,7 @@ body {
   -moz-column-gap: 8px;
   column-gap: 8px;
   position: absolute;
-  bottom: -8px;
+  bottom: -11px;
   left: 0;
 }
 
@@ -1752,6 +1762,7 @@ body {
   -webkit-column-gap: 16px;
   -moz-column-gap: 16px;
   column-gap: 16px;
+  row-gap: 6px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1873,7 +1884,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 184px;
+  width: 176px;
   color: #2d3440;
   text-align: center;
   font-family: "Inter", sans-serif;
@@ -2534,8 +2545,8 @@ body {
 .delivery-info-wrapper {
   margin: 0;
   padding: 0;
-  margin-top: 167px;
-  margin-bottom: 167px;
+  margin-top: 170px;
+  margin-bottom: 163px;
   margin-left: 100px;
   width: 371px;
 }
@@ -3056,7 +3067,7 @@ body {
   margin: 0 auto;
   margin-top: 12px;
   padding: 12px 32px;
-  width: 160px;
+  width: 152px;
   color: #fcfcfc;
   text-align: center;
   font-family: "Inter", sans-serif;
@@ -3185,7 +3196,7 @@ body {
   margin: 0;
   padding: 12px 32px;
   margin-top: 32px;
-  width: 258px;
+  width: 250px;
   text-decoration: none;
   color: #fcfcfc;
   text-align: center;
@@ -3532,14 +3543,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   width: 335px;
 }
 
 .breadcrumbs-item {
-  position: relative;
-  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3548,6 +3559,7 @@ body {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
+  position: relative;
 }
 
 .breadcrumbs-item:not(:last-child) {
@@ -4145,6 +4157,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   width: 168px;
+  row-gap: 4px;
 }
 
 .pagination-item {
@@ -4211,8 +4224,8 @@ body {
   padding: 0;
   margin-top: 4px;
   margin-left: 8px;
-  width: 16px;
-  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4221,4 +4234,26 @@ body {
   justify-content: end;
   color: #2d3440;
   cursor: pointer;
+}
+
+.pagination-next:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  border-radius: 50%;
+}
+
+.pagination-next:active {
+  outline: 1px solid #fcfcfc;
+  background-color: rgba(252, 252, 252, 0.5);
+  border-radius: 50%;
+}
+
+.pagination-next:focus,
+.pagination-next:focus-visible {
+  outline: 1px solid #2d3440;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-color: transparent;
+  border-radius: 50%;
 }
