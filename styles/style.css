@@ -2818,8 +2818,7 @@ body {
 .delivery-form-date {
   margin: 0;
   padding: 0;
-  margin-right: 16px;
-  width: 117px;
+  width: 58px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2889,6 +2888,7 @@ body {
   margin: 0;
   padding: 14px 16px;
   margin-top: 8px;
+  margin-right: 16px;
   width: 117px;
   border-radius: 4px;
   border: 1px solid #b9b9b9;
@@ -2906,7 +2906,7 @@ body {
 .delivery-form-tel {
   margin: 0;
   padding: 0;
-  width: 287px;
+  width: 71px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2938,10 +2938,14 @@ body {
 .delivery-form-address {
   margin: 0;
   padding: 0;
-  margin-top: 20px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .address-form-tooltip-toggle::after {
   content: "";
   position: absolute;
@@ -2998,7 +3002,7 @@ body {
 
 .delivery-form-address-input {
   margin: 0;
-  padding: 14px 161px 14px 16px;
+  padding: 14px 16px;
   margin-top: 8px;
   width: 420px;
   border-radius: 4px;
