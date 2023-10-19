@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Динара Гимранова](https://up.htmlacademy.ru/htmlcss-individual/1/user/2385039).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Шабалин] (https://htmlacademy.ru/profile/id1057153).
 
 ---
 
