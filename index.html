@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" sizes="32x32" href="./images/favicon.png" type="image/png">
   </head>
 
   <!--Для смены фона на голубой - класс body-theme-pink заменить на класс body-theme-blue;
@@ -114,7 +113,7 @@
                   <input class="password-input" name="password" type="password" value="" required>
                 </label>
                 <div class="button-entrance-wrapper">
-                  <button class="button button-entrance" type="button">
+                  <button class="button button-entrance" type="submit">
                     Войти
                   </button>
                   <div class="registration-wrapper">
@@ -150,6 +149,9 @@
                       <span class="tooltip-list-content">1 кг х 310 ₽</span>
                     </div>
                     <span class="tooltip-list-count">310 ₽</span>
+                    <button class="tooltip-button-delete" type="button">
+                      <span class="visually-hidden">Удалить из корзины.</span>
+                    </button>
                   </div>
                   <div class="tooltip-cart-list">
                     <img class="tooltip-list-image" width="46" height="46" src="./images/cart-tooltip/bubble-gum.svg"
@@ -159,6 +161,9 @@
                       <span class="tooltip-list-content">1,5 кг х 320 ₽</span>
                     </div>
                     <span class="tooltip-list-count">480 ₽</span>
+                    <button class="tooltip-button-delete" type="button">
+                      <span class="visually-hidden">Удалить из корзины.</span>
+                    </button>
                   </div>
                 </div>
                 <div class="tooltip-cart-total-wrapper">
@@ -209,9 +214,9 @@
                   Натуральное мороженое из свежих сливок и&nbsp;молока с вкуснейшим
                   клубничным джемом – это&nbsp;идеальный десерт для всей семьи.
                 </p>
-                <button class="button button-order" type="button">
+                <a class="button-order" href="catalog.html">
                   Заказать
-                </button>
+                </a>
               </div>
               <div class="section-slider-image-wrapper">
                 <div class="slider-image-wrapper-1">
@@ -255,9 +260,9 @@
                   даже в самый жаркий
                   летний&nbsp;день.
                 </p>
-                <button class="button button-order" type="button">
+                <a class="button-order" href="catalog.html">
                   Заказать
-                </button>
+                </a>
               </div>
               <div class="section-slider-image-wrapper">
                 <div class="slider-image-wrapper-1">
@@ -293,9 +298,9 @@
                   зефира завоюет сердца&nbsp;сладкоежек всех
                   возрастов.
                 </p>
-                <button class="button button-order" type="button">
+                <a class="button-order" href="catalog.html">
                   Заказать
-                </button>
+                </a>
               </div>
               <div class="section-slider-image-wrapper">
                 <div class="slider-image-wrapper-1">
@@ -325,16 +330,19 @@
           <div class="slider-pagination-wrapper">
             <ul class="slider-pagination">
               <li class="slider-pagination-item">
-                <button class="slider-radio slider-radio-checked" type="button"></button>
-                <span class="visually-hidden">Предыдущий слайдер.</span>
+                <button class="slider-radio slider-radio-checked" type="button">
+                  <span class="visually-hidden">Предыдущий слайдер.</span>
+                </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-radio" type="button"></button>
-                <span class="visually-hidden">Следующий слайдер.</span>
+                <button class="slider-radio" type="button">
+                  <span class="visually-hidden">Следующий слайдер.</span>
+                </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-radio" type="button"></button>
-                <span class="visually-hidden">Последующий слайдер.</span>
+                <button class="slider-radio" type="button">
+                  <span class="visually-hidden">Последующий слайдер.</span>
+                </button>
               </li>
             </ul>
           </div>
@@ -561,7 +569,7 @@
             <div class="email-form-wrapper">
               <label class="email-form">
                 <span class="visually-hidden">Email.</span>
-                <input class="email-input" name="email" type="email" placeholder="email@example.com">
+                <input class="email-input" name="email" type="email" placeholder="email@example.com" required>
               </label>
               <button class="button button-subscribe" type="submit">
                 Отправить
@@ -599,12 +607,13 @@
                   Введите желаемую дату доставки
                 </div>
               </div>
-              <input class="delivery-form-date-input" id="date-input" name="date" type="text" placeholder="01.04.2020">
+              <input class="delivery-form-date-input" id="date-input" name="date" type="text" placeholder="01.04.2020"
+                required>
             </div>
             <div class="delivery-form-wrapper">
               <label class="delivery-form-tel">
                 Телефон
-                <input class="delivery-form-tel-input" type="tel" placeholder="+7 800 999-00-00">
+                <input class="delivery-form-tel-input" type="tel" placeholder="+7 800 999-00-00" required>
               </label>
             </div>
             <div class="delivery-form-wrapper">
@@ -612,7 +621,7 @@
                 Адрес
               </label>
               <input class="delivery-form-address-input" id="address-input" name="address" type="text"
-                placeholder="ул. Большая Конюшенная, 19/8">
+                placeholder="ул. Большая Конюшенная, 19/8" required>
               <div class="delivery-form-address-tooltip">
                 <span class="address-form-tooltip-toggle"></span>
                 <div class="form-address-tooltip-info" role="tooltip" id="address-tooltip">
@@ -642,7 +651,7 @@
             +7&nbsp;(812)&nbsp;812-12-12
           </a>
           <p class="section-feedback-working"> (с 10 до 20 ежедневно) </p>
-          <button class="button button-feedback" type="submit"> Форма обратной связи </button>
+          <a class="button-feedback" href="modal.html"> Форма обратной связи </a>
         </section>
       </div>
     </main>

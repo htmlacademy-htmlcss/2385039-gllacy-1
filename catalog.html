@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" sizes="32x32" href="./images/favicon.png" type="image/png">
   </head>
 
   <!--Для смены фона на голубой - класс body-theme-pink заменить на класс body-theme-blue;
@@ -114,7 +113,7 @@
                   <input class="password-input" name="password" type="password" value="" required>
                 </label>
                 <div class="button-entrance-wrapper">
-                  <button class="button button-entrance" type="button">
+                  <button class="button button-entrance" type="submit">
                     Войти
                   </button>
                   <div class="registration-wrapper">
@@ -150,6 +149,9 @@
                       <span class="tooltip-list-content">1 кг х 310 ₽</span>
                     </div>
                     <span class="tooltip-list-count">310 ₽</span>
+                    <button class="tooltip-button-delete" type="button">
+                      <span class="visually-hidden">Удалить из корзины.</span>
+                    </button>
                   </div>
                   <div class="tooltip-cart-list">
                     <img class="tooltip-list-image" width="46" height="46" src="./images/cart-tooltip/bubble-gum.svg"
@@ -159,6 +161,9 @@
                       <span class="tooltip-list-content">1,5 кг х 320 ₽</span>
                     </div>
                     <span class="tooltip-list-count">480 ₽</span>
+                    <button class="tooltip-button-delete" type="button">
+                      <span class="visually-hidden">Удалить из корзины.</span>
+                    </button>
                   </div>
                 </div>
                 <div class="tooltip-cart-total-wrapper">
@@ -231,10 +236,10 @@
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 32px; width: 72px">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Цена от.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Цена до.</span>
                       </button>
                     </div>

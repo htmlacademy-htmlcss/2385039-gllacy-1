@@ -235,7 +235,7 @@ body {
   padding-top: 8px;
   padding-bottom: 8px;
   margin-left: 0;
-  margin-top: 10px;
+  margin-top: 8px;
   width: 138px;
   list-style-type: none;
   border-radius: 4px;
@@ -289,8 +289,8 @@ body {
   margin: 0;
   padding: 0;
   padding-left: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -340,6 +340,8 @@ body {
 
 .subcatalog-list:first-child {
   margin-bottom: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .subcatalog-list:first-child::after {
@@ -349,7 +351,7 @@ body {
   height: 1px;
   border-bottom: 1px solid;
   color: #b9b9b9;
-  bottom: 0;
+  bottom: -4px;
   left: 16px;
 }
 
@@ -509,6 +511,13 @@ body {
   background-color: #ffffff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  color: #b9b9b9;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+
 }
 
 .search-input-tooltip::-webkit-input-placeholder {
@@ -1188,8 +1197,7 @@ body {
   position: relative;
 }
 
-.tooltip-cart-list::after {
-  content: "";
+.tooltip-button-delete {
   background-image: url("../images/cart-tooltip/cross-icon.svg");
   background-repeat: no-repeat;
   width: 16px;
@@ -1198,6 +1206,9 @@ body {
   right: 0;
   top: 16px;
   cursor: pointer;
+  border: none;
+  box-sizing: border-box;
+  background-color: #fcfcfc;
 }
 
 .tooltip-cart-list:hover::after,
@@ -1734,6 +1745,9 @@ body {
   background-color: #fcfcfc;
   -webkit-box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
   box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Социальные сети */
@@ -2131,6 +2145,7 @@ body {
   background-image: url("../images/section-advantages/section-promotion-background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #ffffff;
 }
 
 .section-advantages {
@@ -2297,6 +2312,7 @@ body {
   background-position: center;
   border-radius: 16px;
   background-size: cover;
+  background-color: #ffffff;
 }
 
 .section-mailing-news {
@@ -2332,6 +2348,7 @@ body {
   background-position: center;
   border-radius: 16px;
   background-size: cover;
+  background-color: #ffffff;
 }
 
 .mailing-form {
@@ -2509,7 +2526,7 @@ body {
 .button-subscribe {
   margin: 0;
   padding: 12px 32px;
-  width: 160px;
+  width: 152px;
   color: #fcfcfc;
   text-align: center;
   font-family: "Inter", sans-serif;
@@ -2543,6 +2560,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  background-color: #ffffff;
 }
 
 .delivery-info-wrapper {
@@ -3109,6 +3127,7 @@ body {
   background-position: center;
   border-radius: 16px;
   background-size: cover;
+  background-color: #ffffff;
 }
 
 .section-feedback {
@@ -3218,6 +3237,11 @@ body {
   background-color: #ff2f64;
   -webkit-box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
   box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .button-feedback:hover,
@@ -3791,31 +3815,32 @@ body {
   cursor: pointer;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  border: none;
 }
 
 .range-toggle:hover {
   background-image: url("../images/catalog/range-hover.svg");
   background-repeat: no-repeat;
-  border: none;
+  border: transparent;
   outline: none;
   -webkit-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
 
-.toggle-min:active {
-  width: 16px;
-  height: 16px;
-  background-color: #2d3440;
-  border-radius: 50%;
+.range-toggle:active {
+  background-image: url("../images/catalog/range-active.svg");
+  background-repeat: no-repeat;
+  outline: none;
+  border: transparent;
 }
 
 .range-toggle:focus,
 .range-toggle:focus-visible {
   background-image: url("../images/catalog/range-hover.svg");
   background-repeat: no-repeat;
-  background-color: #2d3440;
-  outline: none;
+  outline: 2px solid #2d3440;
+  border: transparent;
 }
 
 .toggle-min {
@@ -4275,7 +4300,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(252, 252, 252, 0.3);
+  background-color: rgba(45, 52, 64, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4461,7 +4486,7 @@ body {
 
 .button-subscribe-modal {
   margin: 0;
-  margin-left: 282px;
+  margin-left: auto;
 }
 
 .modal-full-name:hover::-webkit-input-placeholder,
